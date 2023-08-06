@@ -1,23 +1,20 @@
  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500&family=Raleway:wght@300&display=swap');
 
- img {
-     max-width: 50%;
+
+ #title,
+ #legend {
+     margin-bottom: 0;
  }
-#title{
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+
  body {
      margin: 0;
      font-family: 'Hanken Grotesk', sans-serif;
-
+     background-color: #f9f9d2;
+     color: black;
  }
 
  header {
-     background: #DFCF20;
-     background: -moz-linear-gradient(-45deg, #DFCF20 0%, #1C6EA4 86%, #C59237 100%);
-     background: -webkit-linear-gradient(-45deg, #DFCF20 0%, #1C6EA4 86%, #C59237 100%);
-     background: linear-gradient(135deg, #DFCF20 0%, #1C6EA4 86%, #C59237 100%);
+
      text-align: center;
      padding: 10px;
      margin-top: 0;
@@ -25,4 +22,82 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
+     margin-bottom: 0;
  }
+
+ figure {
+     display: flex;
+     margin-top: 0px;
+     padding-top: 0;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     background-color: #f9f9d2;
+
+ }
+
+ img {
+     max-width: 70%;
+     max-height: 30%;
+ }
+
+ article {
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+
+ li {
+     margin-left: 50px;
+     padding-bottom: 20px;
+     margin-right: 50px;
+
+ }
+
+ footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 20px;
+ }
+
+ a {
+    min-width: 130px;
+    height: 20px;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #f9f9d2;
+    overflow: hidden;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    vertical-align: middle; 
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+  a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+  }
